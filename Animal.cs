@@ -1,5 +1,5 @@
 namespace CSharp{
-     public class Animal{
+     public class Animal: IAnimal{
          private string _name;
             private int _age;
             private string _voice;
@@ -36,6 +36,9 @@ namespace CSharp{
                  _voice = voice;
              }
              public void Speak(){
+                 Console.WriteLine("I am {0} and im {1} i {2} to communicate" , _name,_age,_voice);
+             }
+                public void Move(){
                  Console.WriteLine("I am {0} and im {1} i {2} to communicate" , _name,_age,_voice);
              }
      }
